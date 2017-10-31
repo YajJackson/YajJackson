@@ -1,8 +1,14 @@
 /*
-	Multiverse by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+/* Type */
+
+	body, input, select, textarea {
+		color: #ffffff;
+	}
 
 /* Button */
 
@@ -11,37 +17,38 @@
 	input[type="button"],
 	button,
 	.button {
-		border: solid 2px #36383c;
+		position: relative;
 	}
 
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-			border: 0;
+		input[type="submit"]:after,
+		input[type="reset"]:after,
+		input[type="button"]:after,
+		button:after,
+		.button:after {
+			display: none;
 		}
 
-/* Panel */
+/* Features */
 
-	.panel {
-		background: #242629;
-		display: none;
+	.features {
+		border: solid 1px;
 	}
 
-		.panel.active {
-			display: block;
-		}
+/* Form */
 
-		.panel > .closer:before {
-			content: '\00d7';
-			font-size: 42px;
-		}
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		background: transparent;
+		border: solid 1px;
+	}
 
-/* Main */
+/* Split */
 
-	#main .thumb > h2 {
-		text-align: center;
-		width: 100%;
-		left: 0;
+	.split.style1 > :first-child {
+		padding-right: 2em;
+		width: 70%;
 	}
